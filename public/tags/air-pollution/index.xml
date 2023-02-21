@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>air pollution on Yu-Wen Chen</title>
+    <link>https://ywchen-tw.github.io/tags/air-pollution/</link>
+    <description>Recent content in air pollution on Yu-Wen Chen</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Yu-Wen Chen </copyright>
+    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://ywchen-tw.github.io/tags/air-pollution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intercomparison of aircraft and ground based measurements of pollutants and aerosols near major pollution sources over Taiwan [Poster]</title>
+      <link>https://ywchen-tw.github.io/publication_1/conference-intercomparison/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/publication_1/conference-intercomparison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intercomparison of aircraft and ground based measurements near major pollution sources over Taiwan (Ongoing)</title>
+      <link>https://ywchen-tw.github.io/project/measurement_intercomparison/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/measurement_intercomparison/</guid>
+      <description>&lt;p&gt;In this project, we focus on the pollutions near major sources over western Taiwan.
+Aircraft-based observation data are analyzed and compared with surface measurements to investigate near surface chemical reactions of pollutants.
+The result will be presented in 18th ACC in Taipei in Dec. 2019.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;Aircraft-baed observation&lt;/li&gt;
+&lt;li&gt;Ground-based measurements&lt;/li&gt;
+&lt;li&gt;Sounding and Lidar data&lt;/li&gt;
+&lt;li&gt;Reanalysis data&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tracer distribution simulation in western Taiwan using high resolution Taiwan Vector Vorticity Model (Ongoing)</title>
+      <link>https://ywchen-tw.github.io/project/tracer_transport/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/tracer_transport/</guid>
+      <description>&lt;p&gt;In this project, I analyzed simulation results and evaluated the impact on target regions, which usually have terrible air pollutions. In the next stage, we aim to applied zero and first-order chemical reactions into the model to inspect lifetime effect on the regions so as to understand the sources of the pollutant in those highly-polluted regions.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;Taiwan Vector Vorticity Modeling results&lt;/li&gt;
+&lt;li&gt;Ground-based measurements&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
