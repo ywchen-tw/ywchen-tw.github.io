@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Yu-Wen Chen</title>
+    <link>https://ywchen-tw.github.io/project/</link>
+    <description>Recent content in Projects on Yu-Wen Chen</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; {year} Yu-Wen Chen </copyright>
+    <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://ywchen-tw.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intercomparison of aircraft and ground based measurements near major pollution sources over Taiwan (Ongoing)</title>
+      <link>https://ywchen-tw.github.io/project/measurement_intercomparison/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/measurement_intercomparison/</guid>
+      <description>&lt;p&gt;In this project, we focus on the pollutions near major sources over western Taiwan.
+Aircraft-based observation data are analyzed and compared with surface measurements to investigate near surface chemical reactions of pollutants.
+The result will be presented in 18th ACC in Taipei in Dec. 2019.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;Aircraft-baed observation&lt;/li&gt;
+&lt;li&gt;Ground-based measurements&lt;/li&gt;
+&lt;li&gt;Sounding and Lidar data&lt;/li&gt;
+&lt;li&gt;Reanalysis data&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tracer distribution simulation in western Taiwan using high resolution Taiwan Vector Vorticity Model (Ongoing)</title>
+      <link>https://ywchen-tw.github.io/project/tracer_transport/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/tracer_transport/</guid>
+      <description>&lt;p&gt;In this project, I analyzed simulation results and evaluated the impact on target regions, which usually have terrible air pollutions. In the next stage, we aim to applied zero and first-order chemical reactions into the model to inspect lifetime effect on the regions so as to understand the sources of the pollutant in those highly-polluted regions.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;Taiwan Vector Vorticity Modeling results&lt;/li&gt;
+&lt;li&gt;Ground-based measurements&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantitation of glucose using Cu₂O/Ag nanoparticles probe with a smartphone-controlled portable device</title>
+      <link>https://ywchen-tw.github.io/project/glucose_quantification/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/glucose_quantification/</guid>
+      <description>&lt;p&gt;A single-step method combining material preparation and the actual glucose measurements via the in situ growth of Cu&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O/Ag nanoparticles was reported. Mechanistically, I use glucose itself to reduce Cu&lt;!-- raw HTML omitted --&gt;2+&lt;!-- raw HTML omitted --&gt; and Ag&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt; ions that are stabilized with 3-mercaptopropionic acid and bovine serum albumin under alkaline conditions to form Cu&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O/Ag nanoparticles and produce a color change in solution due to plasmonic resonance at 400 nm, which can be related back to the concentration of glucose. This was also the research of my master thesis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Removing mercury ions from polluted solution through poly-dopamine-modified Fe₃O₄ nanoparticles</title>
+      <link>https://ywchen-tw.github.io/project/mercury_removal/</link>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ywchen-tw.github.io/project/mercury_removal/</guid>
+      <description>&lt;p&gt;In this study, I improved the production efficiency of Fe&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;O&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt; nanoparticles by using a novel microwave synthesizer. Also, by modifying a poly-dopamine layer on the surface of nanoparticles to increase the surface area of nanoparticles, I succeeded in enlarging the Hg&lt;!-- raw HTML omitted --&gt;2+&lt;!-- raw HTML omitted --&gt; ions adsorption capacity and releasing efficiency under hydrochloric acid of poly-dopamine-modified Fe&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;O&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt; nanoparticles and maintaining the high magnetic property of the material. The magnetic property of poly-dopamine-modified Fe&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt;O&lt;!-- raw HTML omitted --&gt;4&lt;!-- raw HTML omitted --&gt; nanoparticles makes it eco-friendly to reuse the material.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
