@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu-Wen Chen</title>
+  <meta name="description" content="Yu-Wen Chen — PhD Candidate in Atmospheric and Oceanic Sciences at the University of Colorado Boulder">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#about" class="brand">Yu-Wen Chen</a>
+    <button class="nav-toggle" aria-label="Toggle navigation"
+            onclick="document.getElementById('nav-menu').classList.toggle('open')">&#9776;</button>
+    <ul id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="cv.pdf" target="_blank">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-photo">
+        <img src="avatar.jpg" alt="Yu-Wen Chen" class="avatar">
+      </div>
+
+      <div class="about-content">
+        <h1 class="about-name">Yu-Wen Chen</h1>
+        <p class="about-title">PhD Candidate &nbsp;·&nbsp; Atmospheric &amp; Oceanic Sciences &nbsp;·&nbsp; University of Colorado Boulder</p>
+
+        <p class="about-bio">
+          I am a PhD candidate working with Prof. K. Sebastian Schmidt in the
+          <a href="https://www.colorado.edu/atoc/" target="_blank">Department of Atmospheric and Oceanic Sciences</a>
+          at the University of Colorado Boulder. My research centers on 3D radiative transfer and its
+          applications to satellite remote sensing of greenhouse gases and cloud–surface interactions.
+          I co-developed the
+          <a href="https://github.com/hong-chen/er3t" target="_blank">Education and Research 3D Radiative Transfer Toolbox (EaR3T)</a>
+          to mitigate cloud-induced biases in CO₂ retrievals from NASA's OCO-2 satellite.
+          I also conduct airborne observations in the Arctic to study how clouds modulate sea ice energy balance.
+          I am a recipient of the NASA FINESST award.
+        </p>
+
+        <div class="about-edu">
+          <div class="edu-item">
+            <span class="edu-degree">PhD (in progress) &nbsp;·&nbsp; Atmospheric and Oceanic Sciences</span>
+            <span class="edu-place">University of Colorado Boulder &nbsp;·&nbsp; 2021 – present</span>
+          </div>
+          <div class="edu-item">
+            <span class="edu-degree">M.S. &nbsp;·&nbsp; Atmospheric and Oceanic Sciences</span>
+            <span class="edu-place">University of Colorado Boulder &nbsp;·&nbsp; 2021 – 2023</span>
+          </div>
+          <div class="edu-item">
+            <span class="edu-degree">M.S. &nbsp;·&nbsp; Chemistry</span>
+            <span class="edu-place">National Taiwan University &nbsp;·&nbsp; 2016 – 2018</span>
+          </div>
+          <div class="edu-item">
+            <span class="edu-degree">B.S. &nbsp;·&nbsp; Chemistry <span class="edu-minor">(Minor: Atmospheric Science)</span></span>
+            <span class="edu-place">National Taiwan University &nbsp;·&nbsp; 2013 – 2016</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="mailto:Yu-Wen.Chen@colorado.edu">✉ Email</a>
+          <a href="https://github.com/ywchen-tw" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/yuwen-chen" target="_blank">LinkedIn</a>
+          <a href="cv.pdf" target="_blank">↓ Download CV</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── RESEARCH ── -->
+<section id="research">
+  <div class="container">
+    <div class="section-heading"><h2>Research</h2></div>
+    <div class="research-grid">
+
+      <div class="research-card">
+        <div class="research-icon">&#9729;</div>
+        <h3>3D Radiative Transfer Modeling</h3>
+        <p>Co-developing the Education and Research 3D Radiative Transfer Toolbox (EaR3T) to simulate how three-dimensional cloud fields scatter and absorb solar radiation, enabling physically realistic modeling of the radiation environment observed by satellites.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">&#127758;</div>
+        <h3>Satellite CO₂ Bias Correction</h3>
+        <p>Applying 3D radiative transfer calculations to mitigate cloud-induced biases in CO₂ retrievals from NASA's Orbiting Carbon Observatory-2 (OCO-2), improving the accuracy of global carbon cycle monitoring from space.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">&#10052;</div>
+        <h3>Arctic Cloud–Surface Interactions</h3>
+        <p>Investigating how clouds regulate the radiative energy balance over Arctic sea ice using airborne observations from the ARCSIX campaign. Cloud-induced surface warming may be systematically underestimated by passive satellite-derived products.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">&#127757;</div>
+        <h3>Atmospheric Chemistry &amp; Air Quality</h3>
+        <p>Applying supervised machine learning to identify key drivers of ground-level ozone formation in Taiwan, and conducting aircraft–ground intercomparisons of aerosols and pollutants near major pollution sources.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PUBLICATIONS ── -->
+<section id="publications">
+  <div class="container">
+    <div class="section-heading"><h2>Publications</h2></div>
+
+    <div class="pub-group-label">Published</div>
+    <ol class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title">Mitigation of satellite OCO-2 CO₂ biases in the vicinity of clouds with 3D calculations using the Education and Research 3D Radiative Transfer Toolbox (EaR3T)</div>
+        <div class="pub-authors"><strong>Yu-Wen Chen</strong>, K. Sebastian Schmidt, Hong Chen, Steven T. Massie, Susan S. Kulawik, and Hironobu Iwabuchi</div>
+        <div class="pub-journal"><em>Atmospheric Measurement Techniques</em>, 18, 1859–1884 (2025)&nbsp;<a class="pub-doi" href="https://doi.org/10.5194/amt-18-1859-2025" target="_blank">DOI →</a></div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Investigating variable importance in ground-level ozone formation with supervised learning</div>
+        <div class="pub-authors"><strong>Yu-Wen Chen</strong>, Sourav Medya, Yi-Chun Chen</div>
+        <div class="pub-journal"><em>Atmospheric Environment</em>, 119148 (2022)</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">The Roles of Local Circulation and Boundary Layer Development in Tracer Transport over Complex Topography in Central Taiwan</div>
+        <div class="pub-authors">Min-Ken Hsieh, <strong>Yu-Wen Chen</strong>, Yi-Chun Chen, Chien-Ming Wu</div>
+        <div class="pub-journal"><em>Journal of the Meteorological Society of Japan</em>, 100, 555–573 (2022)</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Quantification of glucose via in situ growth of Cu₂O/Ag nanoparticles</div>
+        <div class="pub-authors"><strong>Yu-Wen Chen</strong>, Arun P. Periasamy, Huan-Tsung Chang, Chien-Fu Chen</div>
+        <div class="pub-journal"><em>Sensors and Actuators B: Chemical</em>, 285, 224–231 (2019)&nbsp;<a class="pub-doi" href="https://doi.org/10.1016/j.snb.2019.01.050" target="_blank">DOI →</a></div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Porous aluminum electrodes with 3D channels and zig-zag edges for efficient hydrogen evolution</div>
+        <div class="pub-authors">Arun P. Periasamy, Pavithra Sriram, <strong>Yu-Wen Chen</strong>, Chien-Wei Wu, Ta-Jen Yen, Huan-Tsung Chang</div>
+        <div class="pub-journal"><em>Chemical Communications</em>, 55, 5447–5450 (2019)&nbsp;<a class="pub-doi" href="https://doi.org/10.1039/C9CC01667H" target="_blank">DOI →</a></div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Smart app-based on-field colorimetric quantification of mercury via analyte-induced enhancement of the photocatalytic activity of TiO₂–Au nanospheres</div>
+        <div class="pub-authors">Rini Ravindranath, Arun P. Periasamy, Prathik Roy, <strong>Yu-Wen Chen</strong>, Huan-Tsung Chang</div>
+        <div class="pub-journal"><em>Analytical and Bioanalytical Chemistry</em>, 410, 4555–4564 (2018)&nbsp;<a class="pub-doi" href="https://doi.org/10.1007/s00216-018-1114-7" target="_blank">DOI →</a></div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Fe₂O₃/Al₂O₃ microboxes for efficient removal of heavy metal ions</div>
+        <div class="pub-authors">Rini Ravindranath, Prathik Roy, Arun P. Periasamy, <strong>Yu-Wen Chen</strong>, Chi-Te Liang, Huan-Tsung Chang</div>
+        <div class="pub-journal"><em>New Journal of Chemistry</em>, 41, 7751–7757 (2017)&nbsp;<a class="pub-doi" href="https://doi.org/10.1039/C7NJ00431A" target="_blank">DOI →</a></div>
+      </li>
+
+    </ol>
+
+    <div class="pub-group-label">In Review</div>
+    <ol class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title">The Arctic Radiation-Cloud-Aerosol-Surface Interaction Experiment (ARCSIX) airborne campaign dataset</div>
+        <div class="pub-authors">Patrick C. Taylor, Armin Sooroshian, Rei Ueyama, Sebastian Schmidt, … <strong>Yu-Wen Chen</strong>, … and Paquita Zuidema</div>
+        <div class="pub-journal"><em>Earth System Science Data Discussions</em> (2026)</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-title">Bias in satellite-derived cloud radiative effect over Arctic sea ice relative to aircraft measurements during ARCSIX</div>
+        <div class="pub-authors">Sebastian Becker, Konrad Sebastian Schmidt, Hong Chen, <strong>Yu-Wen Chen</strong>, Kerry G. Meyer, Colten A. Peterson, and Manfred Wendisch</div>
+        <div class="pub-journal"><em>Atmospheric Chemistry and Physics Discussions</em> (2026)</div>
+      </li>
+
+    </ol>
+
+    <div class="pub-group-label">In Preparation</div>
+    <ol class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-title">High Arctic Sea Ice Albedo Shifts Cloud Radiative Effect Toward Surface Warming</div>
+        <div class="pub-authors"><strong>Yu-Wen Chen</strong>, Ken Hirata, Hong Chen, Vikas Nataraja, and K. Sebastian Schmidt</div>
+        <div class="pub-journal"><em>Geophysical Research Letters</em> (2026)</div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+
+<!-- ── TALKS ── -->
+<section id="talks">
+  <div class="container">
+    <div class="section-heading"><h2>Presentations</h2></div>
+
+    <div class="pub-group-label">Oral Presentations &nbsp;<span class="talk-note">(* presenting author)</span></div>
+    <ol class="talk-list">
+
+      <li class="talk-item">
+        <div class="talk-title">Introduction and Demonstration of the Education and Research 3D Radiative Transfer Toolbox (EaR3T)</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, Ken Hirata, and Vikas Nataraja &nbsp;·&nbsp; Netherlands Institute for Space Research (SRON), Leiden, Netherlands &nbsp;·&nbsp; May 2026</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Mitigation of Cloud-induced Biases in CO₂ Remote Sensing</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, and Steven T. Massie &nbsp;·&nbsp; SRON, Leiden, Netherlands &nbsp;·&nbsp; May 2026</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Spring- and Summertime Airborne Observations in the Arctic Suggest Prolonged Cloud-Induced Surface Melt</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, Ken Hirata, and Vikas Nataraja &nbsp;·&nbsp; University of Colorado Boulder, CO, US &nbsp;·&nbsp; April 2026</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Correcting Cloud-induced Biases in CO₂ Remote Sensing</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, and Steven T. Massie &nbsp;·&nbsp; National Taiwan University, Taipei, Taiwan &nbsp;·&nbsp; January 2026</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">The Impact of Polarization on OCO-2 Bias Mitigation in the Vicinity of Clouds</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; 4th Advancement of POLarimetric Observations (APOLO), Kyoto, Japan &nbsp;·&nbsp; November 2024</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Satellite 3D Radiance Simulator for the OCO-2 Mission and its Application to the Mitigation of Spectroscopy Retrieval Biases in the Vicinity of Clouds</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; International Radiation Symposium 2022, Thessaloniki, Greece &nbsp;·&nbsp; July 2022</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Investigating Ground-level Ozone Formation: A Case Study in Taiwan</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sourav Medya, and Yi-Chun Chen &nbsp;·&nbsp; AIMOCC 2021 Workshop at ICLR 2021, virtual &nbsp;·&nbsp; May 2021</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Quantitation of glucose through its manipulation of the growth of Cu₂O/Ag nanoparticles</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Arun P. Periasamy, and Huan-Tsung Chang &nbsp;·&nbsp; Analytical Chemistry Technology Conference, Keelung, Taiwan &nbsp;·&nbsp; May 2018</div>
+      </li>
+
+    </ol>
+
+    <div class="pub-group-label talk-group-spacer">Poster Presentations &nbsp;<span class="talk-note">(* presenting author)</span></div>
+    <ol class="talk-list">
+
+      <li class="talk-item">
+        <div class="talk-title">The Impact of 3D Cloud Radiative Effect on Trace Gas Retrievals: Bridging the Gap from Low Earth Orbit to Geostationary Missions</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, and Steven T. Massie &nbsp;·&nbsp; EGU General Assembly 2026, Vienna, Austria &nbsp;·&nbsp; May 2026</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Cloud-Induced Warming of Spring and Summer Arctic Sea Ice is Likely Underestimated by Passive Satellite Imagery Derived Products</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Hong Chen, Ken Hirata, Vikas Nataraja, and Sebastian Becker &nbsp;·&nbsp; Radiation and Climate Gordon Research Conference 2025, Lewiston, ME, US &nbsp;·&nbsp; July 2025</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">The Impact of Polarization on OCO-2 Bias Mitigation in the Vicinity of Clouds</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; 4th APOLO, Kyoto, Japan &nbsp;·&nbsp; November 2024</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Mitigation of OCO-2 CO₂ Biases in the Vicinity of Cloud</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; 20th International Workshop on Greenhouse Gas Measurements from Space, Boulder, CO, US &nbsp;·&nbsp; May 2024</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Mitigating the Impact of Three-Dimensional Cloud Effects on CO₂ Retrievals for Various Surface and Cloud Types Using a 3D Radiance Simulator</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; AGU Fall Meeting 2023, San Francisco, CA, US &nbsp;·&nbsp; December 2023</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Mitigation of Satellite OCO-2 CO₂ Biases in the Vicinity of Clouds with 3D Calculations</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; OCO-2/3 Science Team Meeting, Boulder, CO, US &nbsp;·&nbsp; October 2023</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">The Impact of Clouds on the Orbiting Carbon Observatory-2 Satellite Trace Gas Retrievals</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; Workshop Lille on recent advancements in remote sensing and modeling of aerosols, clouds and surfaces, Lille, France &nbsp;·&nbsp; May 2023</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Mitigation of OCO-2 Spectroscopy Retrieval Biases in the Vicinity of Clouds</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Sebastian Schmidt, Steven T. Massie, and Susan S. Kulawik &nbsp;·&nbsp; OCO-2/3 Science Team Meeting, Boulder, CO, US &nbsp;·&nbsp; October 2022</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Intercomparison of aircraft and ground based measurements of pollutants and aerosols near major pollution sources over Taiwan</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Yi-Chun Chen, Charles C.-K. Chou, Lisa Eirenschmalz, Hans Schlager, Helmut Ziereis, Katharina Kaiser, Stephan Borrmann, Johannes Schneider, John P. Burrows, and Pao-Kuan Wang &nbsp;·&nbsp; 18th Asian Chemical Congress, Taipei, Taiwan &nbsp;·&nbsp; December 2018</div>
+      </li>
+
+      <li class="talk-item">
+        <div class="talk-title">Quantitation of Glucose through its Manipulation of the growth of Cu₂O/Ag Nanoparticles</div>
+        <div class="talk-meta"><strong>Yu-Wen Chen*</strong>, Arun P. Periasamy, and Huan-Tsung Chang &nbsp;·&nbsp; Graduate Student Poster Session, Dept. of Chemistry, NTU, Taipei, Taiwan &nbsp;·&nbsp; June 2018</div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+
+<!-- ── TEACHING ── -->
+<section id="teaching">
+  <div class="container">
+    <div class="section-heading"><h2>Teaching</h2></div>
+
+    <div class="teaching-item">
+      <div class="teaching-header">
+        <div>
+          <div class="teaching-course">Weather and the Atmosphere</div>
+          <div class="teaching-role">Teaching Assistant</div>
+        </div>
+        <div class="teaching-meta">
+          <div class="teaching-place">University of Colorado Boulder</div>
+          <div class="teaching-date">Fall 2021</div>
+        </div>
+      </div>
+      <ul class="teaching-bullets">
+        <li>Assisted in general affairs for 350 undergraduate students</li>
+        <li>Led weekly lecture review and exam study guide</li>
+      </ul>
+    </div>
+
+    <div class="teaching-item">
+      <div class="teaching-header">
+        <div>
+          <div class="teaching-course">High School Student Research</div>
+          <div class="teaching-role">Research Instructor</div>
+        </div>
+        <div class="teaching-meta">
+          <div class="teaching-place">National Taiwan University</div>
+          <div class="teaching-date">Sept. 2016 – July 2018</div>
+        </div>
+      </div>
+      <ul class="teaching-bullets">
+        <li>Instructed three high school students on fuel cell research; students received Advanced Honor in the Young Scientists Development Program</li>
+      </ul>
+    </div>
+
+    <div class="teaching-item">
+      <div class="teaching-header">
+        <div>
+          <div class="teaching-course">Analytical Chemistry Lecture</div>
+          <div class="teaching-role">Teaching Assistant</div>
+        </div>
+        <div class="teaching-meta">
+          <div class="teaching-place">National Taiwan University</div>
+          <div class="teaching-date">Spring 2017</div>
+        </div>
+      </div>
+      <ul class="teaching-bullets">
+        <li>Assisted in general affairs for 160 undergraduate students</li>
+        <li>Led weekly lecture review and discussion for study groups</li>
+      </ul>
+    </div>
+
+    <div class="teaching-item">
+      <div class="teaching-header">
+        <div>
+          <div class="teaching-course">Analytical Chemistry Lab</div>
+          <div class="teaching-role">Teaching Assistant</div>
+        </div>
+        <div class="teaching-meta">
+          <div class="teaching-place">National Taiwan University</div>
+          <div class="teaching-date">Fall 2016, Spring 2017</div>
+        </div>
+      </div>
+      <ul class="teaching-bullets">
+        <li>Led weekly experiment review and guided laboratory experiments</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── AWARDS ── -->
+<section id="awards">
+  <div class="container">
+    <div class="section-heading"><h2>Honors &amp; Awards</h2></div>
+
+    <div class="award-row">
+      <span class="award-year">2024</span>
+      <span class="award-name">NASA FINESST Award</span>
+      <span class="award-place">University of Colorado Boulder, CO</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2024</span>
+      <span class="award-name">Summer School for Inverse Modeling of Greenhouse Gases</span>
+      <span class="award-place">Colorado State University, CO</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2023</span>
+      <span class="award-name">Government Scholarship to Study Abroad</span>
+      <span class="award-place">Taiwan Ministry of Education</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2023</span>
+      <span class="award-name">NASA Workshop Lille Travel Support</span>
+      <span class="award-place">University of Oklahoma</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2018</span>
+      <span class="award-name">Best Popularity Award of Poster</span>
+      <span class="award-place">Graduate Student Poster Session, NTU, Taipei</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2017</span>
+      <span class="award-name">Teaching Excellence Award</span>
+      <span class="award-place">National Taiwan University, Taipei</span>
+    </div>
+    <div class="award-row">
+      <span class="award-year">2014</span>
+      <span class="award-name">NTU–Kanagawa University Chemistry Workshop</span>
+      <span class="award-place">Kanagawa University, Japan</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Yu-Wen Chen &nbsp;·&nbsp; <a href="mailto:Yu-Wen.Chen@colorado.edu">Yu-Wen.Chen@colorado.edu</a></p>
+  </div>
+</footer>
+
+
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('nav ul a[href^="#"]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+
+  // Close mobile menu on link click
+  navLinks.forEach(a => a.addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.remove('open');
+  }));
+</script>
+
+</body>
+</html>
