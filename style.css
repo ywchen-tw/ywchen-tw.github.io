@@ -169,8 +169,9 @@ section:nth-child(even) { background: var(--even); }
 }
 .research-card p { font-size: 0.88rem; }
 
-/* ── Research Highlight (video) ── */
+/* ── Research Highlights (video) ── */
 .video-figure { max-width: 860px; margin: 0 auto; }
+.video-figure + .video-figure { margin-top: 3.5rem; }
 .video-frame {
   background: #f2f2f2;
   border: 1px solid var(--border);
@@ -180,12 +181,15 @@ section:nth-child(even) { background: var(--even); }
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
   line-height: 0;
 }
+/* Match the frame to the video's own backdrop so nothing flashes before playback */
+.video-frame--dark { background: #16202c; }
 .video-el {
   display: block;
   width: 100%; height: auto;
   aspect-ratio: 16 / 9;
-  background: #f2f2f2;
+  background: inherit;
 }
+.video-caption sub { font-size: 0.75em; }
 .video-caption {
   font-size: 0.85rem;
   color: var(--muted);

@@ -126,7 +126,32 @@
 <!-- ── RESEARCH HIGHLIGHT ── -->
 <section id="highlight">
   <div class="container">
-    <div class="section-heading"><h2>Research Highlight</h2></div>
+    <div class="section-heading"><h2>Research Highlights</h2></div>
+
+    <figure class="video-figure">
+      <div class="video-frame video-frame--dark">
+        <video
+          class="video-el"
+          src="media/oco2-3d-cloud-bias.mp4"
+          poster="media/oco2-3d-cloud-bias-poster.jpg"
+          controls muted loop playsinline preload="none"
+          aria-label="Animated figure: how three-dimensional cloud effects bias OCO-2 carbon dioxide retrievals and how EaR3T calculations correct them">
+          Your browser does not support embedded video.
+          <a href="media/oco2-3d-cloud-bias.mp4">Download the animation (MP4)</a>.
+        </video>
+      </div>
+      <figcaption class="video-caption">
+        <span class="video-caption-label">Mitigating 3D Cloud Bias in OCO-2 CO₂ Retrievals</span>
+        OCO-2's retrieval assumes sunlight reaches a footprint by one path — straight down to clear
+        ground and straight back up. Near clouds, light also arrives after scattering off cloud sides
+        and bouncing between cloud and surface. Those extra paths lengthen the photon path through
+        the atmosphere and push retrieved X<sub>CO₂</sub> high, which is why the reds cluster along
+        cloud edges. Running 3D radiative transfer with EaR³T reproduces the effect in the O₂ A-band
+        spectrum and removes it from the measurement. Published in
+        <em>Atmospheric Measurement Techniques</em>,
+        <a href="https://doi.org/10.5194/amt-18-1859-2025" target="_blank">18, 1859–1884 (2025)</a>.
+      </figcaption>
+    </figure>
 
     <figure class="video-figure">
       <div class="video-frame">
@@ -134,7 +159,7 @@
           class="video-el"
           src="media/arctic-cloud-radiative-effect.mp4"
           poster="media/arctic-cloud-radiative-effect-poster.jpg"
-          controls muted loop playsinline preload="metadata"
+          controls muted loop playsinline preload="none"
           aria-label="Animated figure: net surface cloud radiative effect versus cloud liquid water path for brighter and darker Arctic sea ice">
           Your browser does not support embedded video.
           <a href="media/arctic-cloud-radiative-effect.mp4">Download the animation (MP4)</a>.
@@ -493,30 +518,31 @@
     document.getElementById('nav-menu').classList.remove('open');
   }));
 
-  // Play the highlight animation while it is on screen (unless reduced motion is preferred)
-  const highlightVideo = document.querySelector('.video-el');
+  // Play each highlight animation while it is on screen (unless reduced motion is preferred)
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (highlightVideo && !reduceMotion && 'IntersectionObserver' in window) {
-    let userPaused = false;      // true only when the viewer hit pause themselves
-    let autoPausing = false;     // set while the observer pauses on scroll-away
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    document.querySelectorAll('.video-el').forEach(video => {
+      let userPaused = false;    // true only when the viewer hit pause themselves
+      let autoPausing = false;   // set while the observer pauses on scroll-away
 
-    highlightVideo.addEventListener('pause', () => {
-      if (autoPausing) { autoPausing = false; return; }
-      userPaused = true;
-    });
-    highlightVideo.addEventListener('play', () => { userPaused = false; });
-
-    new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          if (!userPaused) highlightVideo.play().catch(() => {});
-        } else if (!highlightVideo.paused) {
-          autoPausing = true;
-          userPaused = false;
-          highlightVideo.pause();
-        }
+      video.addEventListener('pause', () => {
+        if (autoPausing) { autoPausing = false; return; }
+        userPaused = true;
       });
-    }, { threshold: 0.35 }).observe(highlightVideo);
+      video.addEventListener('play', () => { userPaused = false; });
+
+      new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            if (!userPaused) video.play().catch(() => {});
+          } else if (!video.paused) {
+            autoPausing = true;
+            userPaused = false;
+            video.pause();
+          }
+        });
+      }, { threshold: 0.4 }).observe(video);
+    });
   }
 </script>
 
