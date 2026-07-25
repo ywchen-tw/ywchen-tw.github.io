@@ -20,6 +20,7 @@
     <ul id="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
+      <li><a href="#highlight">Highlight</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#talks">Talks</a></li>
       <li><a href="#teaching">Teaching</a></li>
@@ -118,6 +119,38 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+
+<!-- ── RESEARCH HIGHLIGHT ── -->
+<section id="highlight">
+  <div class="container">
+    <div class="section-heading"><h2>Research Highlight</h2></div>
+
+    <figure class="video-figure">
+      <div class="video-frame">
+        <video
+          class="video-el"
+          src="media/arctic-cloud-radiative-effect.mp4"
+          poster="media/arctic-cloud-radiative-effect-poster.jpg"
+          controls muted loop playsinline preload="metadata"
+          aria-label="Animated figure: net surface cloud radiative effect versus cloud liquid water path for brighter and darker Arctic sea ice">
+          Your browser does not support embedded video.
+          <a href="media/arctic-cloud-radiative-effect.mp4">Download the animation (MP4)</a>.
+        </video>
+      </div>
+      <figcaption class="video-caption">
+        <span class="video-caption-label">Arctic Sea Ice Albedo &amp; Cloud Radiative Effect</span>
+        Over bright, snow-covered sea ice, clouds warm the surface across a wide range of cloud
+        thickness — the longwave gain outweighs the shortwave loss. Darken the ice only slightly, and
+        the shortwave loss grows fast: the net effect crosses zero at a much thinner cloud, so only
+        the thinnest clouds still warm. Surface albedo therefore sets how thick a cloud can be and
+        still warm the ice beneath it. Based on
+        <em>High Arctic Sea Ice Albedo Shifts Cloud Radiative Effect Toward Surface Warming</em>
+        (in preparation).
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -459,6 +492,32 @@
   navLinks.forEach(a => a.addEventListener('click', () => {
     document.getElementById('nav-menu').classList.remove('open');
   }));
+
+  // Play the highlight animation while it is on screen (unless reduced motion is preferred)
+  const highlightVideo = document.querySelector('.video-el');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (highlightVideo && !reduceMotion && 'IntersectionObserver' in window) {
+    let userPaused = false;      // true only when the viewer hit pause themselves
+    let autoPausing = false;     // set while the observer pauses on scroll-away
+
+    highlightVideo.addEventListener('pause', () => {
+      if (autoPausing) { autoPausing = false; return; }
+      userPaused = true;
+    });
+    highlightVideo.addEventListener('play', () => { userPaused = false; });
+
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          if (!userPaused) highlightVideo.play().catch(() => {});
+        } else if (!highlightVideo.paused) {
+          autoPausing = true;
+          userPaused = false;
+          highlightVideo.pause();
+        }
+      });
+    }, { threshold: 0.35 }).observe(highlightVideo);
+  }
 </script>
 
 </body>

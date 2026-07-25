@@ -169,6 +169,38 @@ section:nth-child(even) { background: var(--even); }
 }
 .research-card p { font-size: 0.88rem; }
 
+/* ── Research Highlight (video) ── */
+.video-figure { max-width: 860px; margin: 0 auto; }
+.video-frame {
+  background: #f2f2f2;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+  line-height: 0;
+}
+.video-el {
+  display: block;
+  width: 100%; height: auto;
+  aspect-ratio: 16 / 9;
+  background: #f2f2f2;
+}
+.video-caption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 1.1rem;
+}
+.video-caption-label {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--accent-dark);
+  margin-bottom: 0.35rem;
+}
+
 /* ── Publications ── */
 .pub-group-label {
   font-family: 'Lato', sans-serif;
