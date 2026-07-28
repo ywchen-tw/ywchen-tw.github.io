@@ -131,54 +131,96 @@
   <div class="container">
     <div class="section-heading"><h2>Research Highlights</h2></div>
 
-    <figure class="video-figure">
-      <div class="video-frame video-frame--dark">
-        <video
-          class="video-el"
-          src="media/oco2-3d-cloud-bias.mp4"
-          poster="media/oco2-3d-cloud-bias-poster.jpg"
-          controls muted loop playsinline preload="none"
-          aria-label="Animated figure: how three-dimensional cloud effects bias OCO-2 carbon dioxide retrievals and how EaR3T calculations correct them">
-          Your browser does not support embedded video.
-          <a href="media/oco2-3d-cloud-bias.mp4">Download the animation (MP4)</a>.
-        </video>
-      </div>
-      <figcaption class="video-caption">
-        <span class="video-caption-label">Mitigating 3D Cloud Bias in OCO-2 CO₂ Retrievals</span>
-        OCO-2's retrieval assumes sunlight reaches a footprint by one path — straight down to clear
-        ground and straight back up. Near clouds, light also arrives after scattering off cloud sides
-        and bouncing between cloud and surface. Those extra paths lengthen the photon path through
-        the atmosphere and push retrieved X<sub>CO₂</sub> high, which is why the reds cluster along
-        cloud edges. Running 3D radiative transfer with EaR³T reproduces the effect in the O₂ A-band
-        spectrum and removes it from the measurement. Published in
-        <em>Atmospheric Measurement Techniques</em>,
-        <a href="https://doi.org/10.5194/amt-18-1859-2025" target="_blank">18, 1859–1884 (2025)</a>.
-      </figcaption>
-    </figure>
+    <div class="carousel" id="highlight-carousel">
+      <ul class="carousel-track" tabindex="0" aria-label="Research highlight animations">
 
-    <figure class="video-figure">
-      <div class="video-frame">
-        <video
-          class="video-el"
-          src="media/arctic-cloud-radiative-effect.mp4"
-          poster="media/arctic-cloud-radiative-effect-poster.jpg"
-          controls muted loop playsinline preload="none"
-          aria-label="Animated figure: net surface cloud radiative effect versus cloud liquid water path for brighter and darker Arctic sea ice">
-          Your browser does not support embedded video.
-          <a href="media/arctic-cloud-radiative-effect.mp4">Download the animation (MP4)</a>.
-        </video>
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 1 of 3">
+          <figure class="video-figure">
+            <div class="video-frame video-frame--dark">
+              <video
+                class="video-el"
+                src="media/oco2-3d-cloud-bias.mp4"
+                poster="media/oco2-3d-cloud-bias-poster.jpg"
+                controls muted loop playsinline preload="none"
+                aria-label="Animated figure: how three-dimensional cloud effects bias OCO-2 carbon dioxide retrievals and how EaR3T calculations correct them">
+                Your browser does not support embedded video.
+                <a href="media/oco2-3d-cloud-bias.mp4">Download the animation (MP4)</a>.
+              </video>
+            </div>
+            <figcaption class="video-caption">
+              <span class="video-caption-label">Mitigating 3D Cloud Bias in OCO-2 CO₂ Retrievals</span>
+              OCO-2's retrieval assumes sunlight reaches a footprint by one path — straight down to
+              clear ground and straight back up. Near clouds, light also arrives after scattering off
+              cloud sides and bouncing between cloud and surface. Those extra paths lengthen the
+              photon path through the atmosphere and push retrieved X<sub>CO₂</sub> high, which is
+              why the reds cluster along cloud edges. Running 3D radiative transfer with EaR³T
+              reproduces the effect in the O₂ A-band spectrum and removes it from the measurement.
+              Published in <em>Atmospheric Measurement Techniques</em>,
+              <a href="https://doi.org/10.5194/amt-18-1859-2025" target="_blank">18, 1859–1884 (2025)</a>.
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 2 of 3">
+          <figure class="video-figure">
+            <div class="video-frame video-frame--dark">
+              <video
+                class="video-el"
+                src="media/o2-band-simulation.mp4"
+                poster="media/o2-band-simulation-poster.jpg"
+                controls muted loop playsinline preload="none"
+                aria-label="Animated figure: a six-step line-by-line radiative transfer simulation of top-of-atmosphere reflectance in the oxygen A and B bands">
+                Your browser does not support embedded video.
+                <a href="media/o2-band-simulation.mp4">Download the animation (MP4)</a>.
+              </video>
+            </div>
+            <figcaption class="video-caption">
+              <span class="video-caption-label">Line-by-Line O₂ A/B-Band Simulation</span>
+              A six-step walkthrough of the clear-sky benchmark behind the retrieval work: every
+              oxygen transition in HITRAN 2020 gets its Voigt shape from local pressure and
+              temperature, absorption accumulates layer by layer into optical thickness with
+              water vapour and Rayleigh scattering kept separable, and Monte Carlo photons carry it
+              to top-of-atmosphere reflectance across the O₂ A- and B-bands. The result is a
+              reference other models can be checked against. Built with MCARaTS via EaR³T —
+              <a href="https://github.com/ywchen-tw/O2band_sim" target="_blank">O2band_sim on GitHub</a>.
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 3 of 3">
+          <figure class="video-figure">
+            <div class="video-frame">
+              <video
+                class="video-el"
+                src="media/arctic-cloud-radiative-effect.mp4"
+                poster="media/arctic-cloud-radiative-effect-poster.jpg"
+                controls muted loop playsinline preload="none"
+                aria-label="Animated figure: net surface cloud radiative effect versus cloud liquid water path for brighter and darker Arctic sea ice">
+                Your browser does not support embedded video.
+                <a href="media/arctic-cloud-radiative-effect.mp4">Download the animation (MP4)</a>.
+              </video>
+            </div>
+            <figcaption class="video-caption">
+              <span class="video-caption-label">Arctic Sea Ice Albedo &amp; Cloud Radiative Effect</span>
+              Over bright, snow-covered sea ice, clouds warm the surface across a wide range of cloud
+              thickness — the longwave gain outweighs the shortwave loss. Darken the ice only
+              slightly, and the shortwave loss grows fast: the net effect crosses zero at a much
+              thinner cloud, so only the thinnest clouds still warm. Surface albedo therefore sets
+              how thick a cloud can be and still warm the ice beneath it. Based on
+              <em>High Arctic Sea Ice Albedo Shifts Cloud Radiative Effect Toward Surface Warming</em>
+              (in preparation).
+            </figcaption>
+          </figure>
+        </li>
+
+      </ul>
+
+      <div class="carousel-controls">
+        <button class="carousel-arrow" data-dir="-1" aria-label="Previous highlight">&#8249;</button>
+        <div class="carousel-dots" role="tablist" aria-label="Choose a highlight"></div>
+        <button class="carousel-arrow" data-dir="1" aria-label="Next highlight">&#8250;</button>
       </div>
-      <figcaption class="video-caption">
-        <span class="video-caption-label">Arctic Sea Ice Albedo &amp; Cloud Radiative Effect</span>
-        Over bright, snow-covered sea ice, clouds warm the surface across a wide range of cloud
-        thickness — the longwave gain outweighs the shortwave loss. Darken the ice only slightly, and
-        the shortwave loss grows fast: the net effect crosses zero at a much thinner cloud, so only
-        the thinnest clouds still warm. Surface albedo therefore sets how thick a cloud can be and
-        still warm the ice beneath it. Based on
-        <em>High Arctic Sea Ice Albedo Shifts Cloud Radiative Effect Toward Surface Warming</em>
-        (in preparation).
-      </figcaption>
-    </figure>
+    </div>
   </div>
 </section>
 
@@ -521,32 +563,125 @@
     document.getElementById('nav-menu').classList.remove('open');
   }));
 
-  // Play each highlight animation while it is on screen (unless reduced motion is preferred)
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduceMotion && 'IntersectionObserver' in window) {
-    document.querySelectorAll('.video-el').forEach(video => {
-      let userPaused = false;    // true only when the viewer hit pause themselves
-      let autoPausing = false;   // set while the observer pauses on scroll-away
+  // ── Research highlight carousel ──
+  (function () {
+    const carousel = document.getElementById('highlight-carousel');
+    if (!carousel) return;
 
-      video.addEventListener('pause', () => {
-        if (autoPausing) { autoPausing = false; return; }
-        userPaused = true;
+    const track  = carousel.querySelector('.carousel-track');
+    const slides = [...carousel.querySelectorAll('.carousel-slide')];
+    const dotBox = carousel.querySelector('.carousel-dots');
+    const arrows = [...carousel.querySelectorAll('.carousel-arrow')];
+    if (slides.length < 2) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let index = 0;
+    let carouselOnScreen = false;
+
+    // One dot per slide
+    const dots = slides.map((slide, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot';
+      dot.setAttribute('role', 'tab');
+      dot.setAttribute('aria-label', 'Highlight ' + (i + 1) + ' of ' + slides.length);
+      dot.addEventListener('click', () => goTo(i));
+      dotBox.appendChild(dot);
+      return dot;
+    });
+
+    function goTo(i) {
+      index = Math.max(0, Math.min(slides.length - 1, i));
+      track.scrollTo({
+        left: slides[index].offsetLeft - slides[0].offsetLeft,
+        behavior: reduceMotion ? 'auto' : 'smooth'
       });
-      video.addEventListener('play', () => { userPaused = false; });
+      // Only the controls may update now — see renderSlides() for why
+      renderControls();
+    }
 
+    arrows.forEach(btn => btn.addEventListener('click', () => {
+      goTo(index + Number(btn.dataset.dir));
+    }));
+
+    // Arrow keys move the carousel once the strip itself has focus
+    track.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight')     { e.preventDefault(); goTo(index + 1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(index - 1); }
+    });
+
+    // Dots and arrows live outside the scroll container, so these are safe to
+    // update at any moment, including while a scroll is still animating.
+    function renderControls() {
+      dots.forEach((d, i) => d.setAttribute('aria-selected', String(i === index)));
+      arrows.forEach(btn => {
+        const dir = Number(btn.dataset.dir);
+        btn.disabled = dir < 0 ? index === 0 : index === slides.length - 1;
+      });
+    }
+
+    // Keep off-screen slides out of the tab order and away from screen readers.
+    // inert covers both; browsers without it just leave every slide reachable.
+    //
+    // This MUST wait until scrolling has settled. Toggling inert restyles a child
+    // of the track, and a `scroll-snap-type: mandatory` container re-snaps on any
+    // such change — mid-flight that cancels the animation and yanks it back.
+    function renderSlides() {
+      slides.forEach((slide, i) => { slide.inert = i !== index; });
+      syncPlayback();
+    }
+
+    // Only the slide in view plays, and only while the carousel itself is on screen
+    function syncPlayback() {
+      slides.forEach((slide, i) => {
+        const video = slide.querySelector('.video-el');
+        const shouldPlay = i === index && carouselOnScreen && !reduceMotion && !video.dataset.userPaused;
+        if (shouldPlay) {
+          video.play().catch(() => {});
+        } else if (!video.paused) {
+          video.dataset.autoPausing = '1';
+          video.pause();
+        }
+      });
+    }
+
+    slides.forEach(slide => {
+      const video = slide.querySelector('.video-el');
+      video.addEventListener('pause', () => {
+        // Distinguish a viewer's pause from one this script triggered
+        if (video.dataset.autoPausing) { delete video.dataset.autoPausing; return; }
+        video.dataset.userPaused = '1';
+      });
+      video.addEventListener('play', () => { delete video.dataset.userPaused; });
+    });
+
+    // Track which slide the viewer has scrolled or swiped to
+    let scrollTimer;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        const width = slides[0].offsetWidth || 1;
+        index = Math.round(track.scrollLeft / width);
+        renderControls();
+        renderSlides();
+      }, 120);
+    }, { passive: true });
+
+    // Suspend playback whenever the carousel itself scrolls out of the page view
+    if ('IntersectionObserver' in window) {
       new IntersectionObserver(entries => {
         entries.forEach(e => {
-          if (e.isIntersecting) {
-            if (!userPaused) video.play().catch(() => {});
-          } else if (!video.paused) {
-            autoPausing = true;
-            userPaused = false;
-            video.pause();
-          }
+          carouselOnScreen = e.isIntersecting;
+          syncPlayback();
         });
-      }, { threshold: 0.4 }).observe(video);
-    });
-  }
+      }, { threshold: 0.3 }).observe(track);
+    } else {
+      carouselOnScreen = true;
+    }
+
+    carousel.classList.add('is-ready');
+    renderControls();
+    renderSlides();
+  })();
 </script>
 
 </body>
