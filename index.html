@@ -134,7 +134,34 @@
     <div class="carousel" id="highlight-carousel">
       <ul class="carousel-track" tabindex="0" aria-label="Research highlight animations">
 
-        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 1 of 3">
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 1 of 4">
+          <figure class="video-figure">
+            <div class="video-frame video-frame--dark">
+              <video
+                class="video-el"
+                src="media/usd-rt-clouds.mp4"
+                poster="media/usd-rt-clouds-poster.jpg"
+                controls muted loop playsinline preload="none"
+                aria-label="Animated figure: a large-eddy simulation shallow-cumulus cloud field authored as an OpenUSD volume and path-traced, then validated against EaR3T three-dimensional radiative transfer">
+                Your browser does not support embedded video.
+                <a href="media/usd-rt-clouds.mp4">Download the animation (MP4)</a>.
+              </video>
+            </div>
+            <figcaption class="video-caption">
+              <span class="video-caption-label">USD-RT Clouds: A Cloud Digital Twin in OpenUSD</span>
+              Atmospheric radiative transfer and film rendering solve the same physics with different
+              tooling. This project carries a real shallow-cumulus field from 7SEAS large-eddy
+              simulation into an OpenUSD volume — an OpenVDB extinction grid under UsdVol — and
+              path-traces it with Cycles. Rendering the identical extinction field through both the
+              graphics path tracer and EaR³T's 3D solver (MCARaTS) at 650 nm agrees to r = 0.99 with
+              7.2% relative RMSE, so the scene is a physically faithful digital twin rather than a
+              pretty picture. Code at
+              <a href="https://github.com/ywchen-tw/cloud-surface-openusd" target="_blank">cloud-surface-openusd on GitHub</a>.
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 2 of 4">
           <figure class="video-figure">
             <div class="video-frame video-frame--dark">
               <video
@@ -161,7 +188,7 @@
           </figure>
         </li>
 
-        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 2 of 3">
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 3 of 4">
           <figure class="video-figure">
             <div class="video-frame video-frame--dark">
               <video
@@ -187,7 +214,7 @@
           </figure>
         </li>
 
-        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 3 of 3">
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Highlight 4 of 4">
           <figure class="video-figure">
             <div class="video-frame">
               <video
