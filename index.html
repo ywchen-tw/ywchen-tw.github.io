@@ -590,6 +590,10 @@
     sections.forEach(s => {
       if (window.scrollY >= s.offsetTop - 80) current = s.id;
     });
+    // At the very bottom the last section's threshold may be unreachable
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      current = sections[sections.length - 1].id;
+    }
     navLinks.forEach(a => {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });

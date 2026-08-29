@@ -181,7 +181,9 @@ section:nth-child(even) { background: var(--even); }
   display: flex;
   list-style: none;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  /* proximity, not mandatory: a mandatory snap container swallows vertical
+     wheel gestures in Chrome, freezing page scroll while the cursor is here */
+  scroll-snap-type: x proximity;
   /* Motion is driven by scrollTo({behavior}) in JS so reduced-motion can turn it off */
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
